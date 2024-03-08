@@ -1,0 +1,32 @@
+/* 버튼 코드 시작 */
+@keyframes gradient {
+    0% { background-color: #ff007f; }
+    25% { background-color: #00ff7f; }
+    50% { background-color: #007fff; }
+    75% { background-color: #ff7f00; }
+    100% { background-color: #ff007f; }
+}
+
+@keyframes sparkle {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.sparkle-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #FFF;
+    background: linear-gradient(45deg, #ff007f, #007fff, #ff7f00, #00ff7f);
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    animation: sparkle 2s infinite, gradient 4s ease infinite;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.sparkle-button:hover {
+    transform: scale(1.1);
+}
+/* 버튼 코드 끝 */
